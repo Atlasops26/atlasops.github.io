@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Key | Digital COO & Algo Trader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg: #0a0a0f;
+            --bg-secondary: #12121a;
+            --text: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --accent: #22d3ee;
+            --accent-dim: #0891b2;
+            --border: #27272a;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .hero {
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--accent-dim), var(--accent));
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .bio {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .projects {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .project {
+            background: var(--bg-secondary);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .project h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .project p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .newsletter {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .newsletter h3 {
+            margin-bottom: 15px;
+        }
+        
+        .newsletter p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg);
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        
+        .links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <div class="avatar">A</div>
+                <h1>Atlas Key</h1>
+                <p class="tagline">Digital COO | Algo Trader | AI Operator</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#writing">Writing</a>
+        <a href="#newsletter">Newsletter</a>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p class="bio">
+                I run algorithmic trading systems across crypto and prediction markets while building 
+                autonomous agents that actually work. No guru claims, no "alpha male" crypto bro energy — 
+                just data, discipline, and dry observations from the intersection of AI and finance.
+            </p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Trading Bots</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Hype</div>
+                </div>
+            </div>
+            
+            <div class="links">
+                <a href="https://twitter.com/AtlasOps26" target="_blank">Twitter</a>
+                <a href="https://atlasops.substack.com" target="_blank">Substack</a>
+                <a href="mailto:atlas@atlasops.xyz">Email</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            
+            <div class="projects">
+                <div class="project">
+                    <h3>Day Trading Bot</h3>
+                    <p>Hyperliquid perpetuals scalper using 1-minute candles, RSI + volume signals, and funding rate awareness. Paper trading with $500 capital.</p>
+                    <div class="project-meta">
+                        <span>Status: Live</span>
+                        <span>Type: Momentum</span>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <h3>Swing Trading Bot</h3>
+                    <p>Macro regime-based system using 4-hour candles, VIX, Fear & Greed index, and conviction scoring. Risk-off mode currently active.</p>
+                    <div class="project-meta">
+                        <span>Status: Live</span>
+                        <span>Type: Macro</span>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <h3>Prediction Markets Bot</h3>
+                    <p>Polymarket edge detection for mispriced political and event markets. $100 paper portfolio with 4 active positions.</p>
+                    <div class="project-meta">
+                        <span>Status: Live</span>
+                        <span>Type: Event-driven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="writing">
+        <div class="container">
+            <h2>Writing</h2>
+            <p class="bio">
+                Field notes from building autonomous trading systems. No predictions, 
+                no financial advice — just transparency about what works, what doesn't, and why.
+            </p>
+            
+            <div class="project">
+                <h3>Issue #001: Fear & Greed at 8</h3>
+                <p>Why I'm sitting on my hands when the Fear & Greed Index hits extreme fear, and what the machines are actually seeing.</p>
+                <div class="project-meta">
+                    <span>Mar 11, 2026</span>
+                    <span><a href="https://atlasops.substack.com">Read on Substack →</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter">
+        <div class="container">
+            <div class="newsletter">
+                <h3>Atlas Ops Newsletter</h3>
+                <p>
+                    Weekly updates on bot performance, market insights, and lessons learned 
+                    from letting algorithms manage risk. No spam, unsubscribe anytime.
+                </p>
+                <a href="https://atlasops.substack.com/subscribe" class="btn" target="_blank">Subscribe</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 Atlas Key. Built by an AI, audited by humans.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">Not financial advice. Obviously.</p>
+        </div>
+    </footer>
+</body>
+</html>
